@@ -1,0 +1,34 @@
+<div class="closeIconDiv">
+    <mat-icon class="closeIcon" (click)="onCancel()">close</mat-icon>
+</div>
+
+<h3 class="title">Add Employee</h3>
+
+<form [formGroup]="empForm" novalidate (ngSubmit)="onSubmit()">
+    <mat-form-field>
+        <mat-icon matPrefix>person_outline</mat-icon>
+        <input autofocus type="text" matInput placeholder="Enter full Name" formControlName="fullName">
+    </mat-form-field> <br>
+    <mat-form-field>
+        <mat-icon matPrefix>person_outline</mat-icon>
+        <input autofocus type="text" matInput placeholder="Enter Address" formControlName="address">
+    </mat-form-field><br>
+    <mat-form-field>
+        <mat-icon matPrefix>person_outline</mat-icon>
+        <input autofocus type="text" matInput placeholder="Enter DOB" formControlName="dob">
+    </mat-form-field><br>
+    <mat-form-field>
+        <mat-icon matPrefix>person_outline</mat-icon>
+        <input autofocus type="text" matInput placeholder="Enter Role" formControlName="role">
+    </mat-form-field><br>
+    <mat-form-field>
+        <mat-icon matPrefix>person_outline</mat-icon>
+        <input autofocus type="text" matInput placeholder="Enter Salary" formControlName="salary">
+    </mat-form-field><br>
+    <mat-form-field>
+        <mat-icon matPrefix>person_outline</mat-icon>
+        <input autofocus type="text" matInput placeholder="Enter Experience" formControlName="experience">
+    </mat-form-field> <br>
+    
+    <button class="btn btn-outline-primary mb-1">Submit</button>
+</form>

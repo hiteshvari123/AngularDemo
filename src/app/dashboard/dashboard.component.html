@@ -1,0 +1,28 @@
+<app-topnav></app-topnav>
+
+<mat-card class="mainCard">
+    <div>
+        <h5>Employee Details</h5>
+        <button class="btn btn-outline-primary mb-1 addButton" (click)="addEmp()">Add Employee</button>
+    </div>
+
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Experience</th>
+                <th>View</th>
+            </tr> 
+        </thead>
+ 
+        <tbody>
+            <tr *ngFor="let emp of employeeDetails">
+                <td>{{emp.Name}}</td>
+                <td>{{emp.Role}}</td>
+                <td>{{emp.exp}}</td>
+                <td><button class="btn btn-outline-primary mb-1" (click)="viewEmpDetails(emp)">View</button></td>
+            </tr>
+        </tbody>
+    </table>
+</mat-card>

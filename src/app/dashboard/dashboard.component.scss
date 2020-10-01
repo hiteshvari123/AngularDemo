@@ -1,0 +1,24 @@
+.mainCard{
+    margin-top: 25px;
+    border-radius: 7px;
+}
+::ng-deep .cdk-overlay-pane{
+    //  width: unset !important;
+      height: unset !important;
+      max-width: 50% !important;
+      justify-content: flex-end !important; //centering dialogue
+    }
+     
+  ::ng-deep .mat-dialog-container{
+      // max-width: 100%;
+      // max-height: 100%;
+      margin-top: 130px;
+      margin-bottom:70px ;
+   //   resize: both;
+      height: auto !important;
+      overflow: scroll !important;
+  }
+  .addButton{
+    float: right;
+    margin-bottom: 10px;
+  }

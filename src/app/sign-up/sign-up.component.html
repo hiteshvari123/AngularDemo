@@ -1,0 +1,32 @@
+<div class="fixed-background"></div>
+<div class="login-container">
+    <div class="login-content">
+      <mat-toolbar class="login-toolbar" color="primary">Create Account to Employee Portal</mat-toolbar>
+      <mat-card>
+        <form [formGroup]="signUpForm" novalidate (ngSubmit)="onSubmit()">
+            <mat-form-field>
+                <mat-icon matPrefix>person_outline</mat-icon>
+                <input autofocus type="text" matInput placeholder="Enter full Name" formControlName="fullName">
+            </mat-form-field>
+          <mat-form-field>
+            <mat-icon matPrefix>person_outline</mat-icon>
+            <input autofocus type="text" matInput placeholder="Enter Email Id" formControlName="email">
+          </mat-form-field>
+          <br>
+          <mat-form-field>
+            <mat-icon matPrefix>lock_outline</mat-icon>
+            <input type="password" autocomplete="false" matInput placeholder="Enter Password" formControlName="password">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-icon matPrefix>lock_outline</mat-icon>
+            <input type="password" autocomplete="false" matInput placeholder="Enter Confirm Password" formControlName="c_password">
+          </mat-form-field>
+          <br>
+          <button type="submit" mat-raised-button class="loginBtnCdf">Sign Up</button>
+          <div class="orDiv" style="text-align: center;">OR</div>
+          <div class="signUpDiv"><a class="signUpText" (click)="signIn()">Sign In</a></div>
+
+        </form>
+      </mat-card>
+    </div>
+</div>
